@@ -21,7 +21,7 @@ public class CustomAdapter extends ArrayAdapter<ParamDetails> {
         ParamDetails item = (ParamDetails) getItem(position);
         // convertViewは使い回しされている可能性があるのでnullの時だけ新しく作る
         if (null == convertView) {
-            convertView = mlayoutInflater.inflate(R.layout.activity_sample_list, null);
+            convertView = mlayoutInflater.inflate(R.layout.param_list, null);
         }
         TextView tv1,tv2,tv3,tv4,tv5;
         tv1 = (TextView) convertView.findViewById(R.id.noTextView);
