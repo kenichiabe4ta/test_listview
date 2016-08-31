@@ -18,7 +18,7 @@ public class CustomAdapter extends ArrayAdapter<ParamDetails> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // 特定の行(position)のデータを得る
-        ParamDetails item = (ParamDetails) getItem(position);
+        ParamDetails item = getItem(position);
         // convertViewは使い回しされている可能性があるのでnullの時だけ新しく作る
         if (null == convertView) {
             convertView = mlayoutInflater.inflate(R.layout.param_list, null);
